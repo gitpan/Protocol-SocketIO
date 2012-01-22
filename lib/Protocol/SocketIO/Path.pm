@@ -72,7 +72,7 @@ __END__
 
 =head1 NAME
 
-Protocol::SocketiO::Path - Socket.IO path parsing
+Protocol::SocketIO::Path - Socket.IO path parsing
 
 =head1 SYNOPSIS
 
