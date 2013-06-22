@@ -1,31 +1,46 @@
 ---
-abstract: 'Socket.IO protocol'
+abstract: 'Socket.IO protocol implementation'
 author:
-  - 'Viacheslav Tykhanovskyi <vti@cpan.org>'
-build_requires:
-  ExtUtils::MakeMaker: 6.62
+  - 'Viacheslav Tykhanovskyi, C<vti@cpan.org>.'
+build_requires: {}
 configure_requires:
-  ExtUtils::MakeMaker: 6.62
-distribution_type: module
-dynamic_config: 1
-generated_by: 'Module::Install version 1.04'
-license: artistic_2
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.4.3, CPAN::Meta::Converter version 2.130880'
+license: unknown
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: Protocol-SocketIO
+name: protocol-socketio
 no_index:
   directory:
-    - inc
     - t
     - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+provides:
+  Protocol::SocketIO:
+    file: lib/Protocol/SocketIO.pm
+    version: 0.05
+  Protocol::SocketIO::Handshake:
+    file: lib/Protocol/SocketIO/Handshake.pm
+  Protocol::SocketIO::Message:
+    file: lib/Protocol/SocketIO/Message.pm
+  Protocol::SocketIO::Path:
+    file: lib/Protocol/SocketIO/Path.pm
 requires:
   Encode: 0
   JSON: 0
   Scalar::Util: 0
-  perl: 5.8.7
 resources:
-  bugtracker: http://github.com/vti/pocketio/issues
-  license: http://dev.perl.org/licenses/
-  repository: http://github.com/vti/pocketio/
-version: 0.04
+  bugtracker: https://github.com/vti/protocol-socketio/issues
+  homepage: https://github.com/vti/protocol-socketio
+  repository: git://github.com/vti/protocol-socketio.git
+version: 0.05
+x_contributors:
+  - 'vti <viacheslav.t@gmail.com>'
