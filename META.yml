@@ -8,12 +8,12 @@ configure_requires:
   CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Minilla/v0.4.3, CPAN::Meta::Converter version 2.130880'
+generated_by: 'Minilla/v0.7.5, CPAN::Meta::Converter version 2.130880'
 license: unknown
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: protocol-socketio
+name: Protocol-SocketIO
 no_index:
   directory:
     - t
@@ -23,10 +23,11 @@ no_index:
     - eg
     - examples
     - author
+    - builder
 provides:
   Protocol::SocketIO:
     file: lib/Protocol/SocketIO.pm
-    version: 0.05
+    version: 0.06
   Protocol::SocketIO::Handshake:
     file: lib/Protocol/SocketIO/Handshake.pm
   Protocol::SocketIO::Message:
@@ -41,6 +42,6 @@ resources:
   bugtracker: https://github.com/vti/protocol-socketio/issues
   homepage: https://github.com/vti/protocol-socketio
   repository: git://github.com/vti/protocol-socketio.git
-version: 0.05
+version: 0.06
 x_contributors:
   - 'vti <viacheslav.t@gmail.com>'
